@@ -1,0 +1,29 @@
+<md-toolbar>
+    <a md-menu-item routerLink="" routerLinkActive="active">
+    	<span>Психо анализ</span>
+    </a>
+    <button md-button [mdMenuTriggerFor]="testingMenu">
+   		Тестирование
+	</button>
+	<button md-button [mdMenuTriggerFor]="analysisMenu">
+   		Анализ
+	</button>
+</md-toolbar>
+
+<md-menu #testingMenu="mdMenu">
+  <!-- <button md-menu-item (click)="goTesting('tst1')">Тестирование 1 </button> -->
+  <a md-menu-item routerLink="/testing" routerLinkActive="active"> Тестирование 1  </a>
+  <a md-menu-item routerLink="/testing" routerLinkActive="active"> Тестирование 2  </a>
+</md-menu>
+<md-menu #analysisMenu="mdMenu">
+  <a md-menu-item routerLink="/analysis" routerLinkActive="active"> Анализ на основе тестов 1  </a>
+  <a md-menu-item routerLink="/analysis" routerLinkActive="active"> Анализ на основе тестов 2  </a>
+</md-menu>
+
+<!--
+<nav>
+      <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+      <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
+</nav> -->
+
+<router-outlet></router-outlet>
