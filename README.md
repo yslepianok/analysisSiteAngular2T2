@@ -1,3 +1,6 @@
+Чтобы установить отсутствующие модули, в папке проекта надо выполнить команду:
+npm install
+
 # AnalysisSiteAngular2T2
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
